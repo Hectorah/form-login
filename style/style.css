@@ -1,0 +1,110 @@
+body {
+     font-family: 'Poppins', sans-serif;
+    background-image: url("../img/paisaje1.jpg"); /* Ruta correcta */
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Para que el fondo cubra toda la pantalla con una */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body:hover {
+   /* background: linear-gradient(to right, #3498db, #9b59b6); /* Fondo al hacer hover en el body a colores */
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 400px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para el contenedor */
+}
+
+.login-container:hover {
+    transform: scale(1.02); /* Escala ligeramente al hacer hover */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al hacer hover */
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.login-container:hover h2 {
+    color: #ecf0f1;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.login-container:hover label {
+    color: #d0d0d0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.login-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05); /* Escala ligeramente al hacer hover */
+}
+
+.options {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    transition: color 0.3s ease;
+}
+
+.options a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.options a:hover {
+    color: #ecf0f1;
+}
