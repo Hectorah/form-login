@@ -1,6 +1,6 @@
 body {
      font-family: 'Poppins', sans-serif;
-    background-image: url("../img/paisaje1.jpg"); /* Ruta correcta */
+    background-image: url("../img/paisaje2.jpg"); /* Ruta correcta */
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh; /* Para que el fondo cubra toda la pantalla con una */
